@@ -34,7 +34,6 @@
 | GET          | /api/stock/id                         | 200 (OK)         | to get a stock  information                                    |
 | PUT          | /api/stock/id                         | 200 (OK)         | to update a specific stock  information                        |
 | DELETE       | /api/stock/id                         | 200 (OK)         | to delete a specific stock customers                           |
-|--------------|---------------------------------------|------------------|----------------------------------------------------------------|
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -49,6 +48,7 @@ then you can use command mvn install or in the maven bar on the left, and choose
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 to build an img, you need to add dockerfile and docker-compose.yaml to the project, with the values i added, run docker and use the command lines or the IntelliJ command line to do docker-compse up and wait, after that just wait it to finish, push the image to the docker and run the container(previously created).
+you can then push this img to the Docker repo
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 
