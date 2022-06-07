@@ -1,5 +1,3 @@
-Docker Image Link:https://hub.docker.com/r/ahmadkhateebq/docker-sample
-
 
 
 | HTTPS method | URL path                              | HTTP status code | description                                                    |
@@ -38,3 +36,20 @@ Docker Image Link:https://hub.docker.com/r/ahmadkhateebq/docker-sample
 | DELETE       | /api/stock/id                         | 200 (OK)         | to delete a specific stock customers                           |
 |--------------|---------------------------------------|------------------|----------------------------------------------------------------|
 
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+To build the application, you need to run it first and make sure its working, add this depedency 
+<!-- Package as an executable jar/war -->
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+then you can use command mvn install or in the maven bar on the left, and choose lifesycle, then install 
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+to build an img, you need to add dockerfile and docker-compose.yaml to the project, with the values i added, run docker and use the command lines or the IntelliJ command line to do docker-compse up and wait, after that just wait it to finish, push the image to the docker and run the container(previously created).
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+Docker Image Link:https://hub.docker.com/r/ahmadkhateebq/docker-sample
